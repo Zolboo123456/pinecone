@@ -1,0 +1,149 @@
+body {
+  margin: 0 auto;
+  max-width: 1280px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+header {
+  height: 60px;
+  background-color: white;
+  font-size: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: sticky;
+  top: 0px;
+}
+
+#food {
+  display: flex;
+  flex-direction: column;
+}
+
+.food-row {
+  display: flex;
+  gap: 10px;
+}
+
+.food-row-item {
+  width: 320px;
+}
+
+.food-row-item img {
+  width: 100%;
+  height: 400px;
+}
+
+.food-row-item-description {
+  padding: 20px;
+}
+
+#pagination {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+#pagination button {
+  width: 38px;
+  height: 38px;
+  justify-content: center;
+  border: none;
+  font-size: 15px;
+  background-color: white;
+}
+
+#pagination button:hover {
+  background-color: black;
+  color: white;
+}
+
+.separator {
+  border-bottom: 1px solid grey;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 32px;
+  text-align: center;
+}
+
+#about-me h5 {
+  font-size: 30px;
+  margin: 0;
+}
+
+#about-me p {
+  margin: 0;
+}
+
+footer {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-info a {
+  color: black;
+}
+
+#powered-by {
+  display: flex;
+}
+
+.post {
+  display: flex;
+  padding: 16px;
+  gap: 8px;
+}
+
+.post:hover {
+  background-color: lightgray;
+}
+
+.post img {
+  width: 51px;
+  height: 51px;
+}
+
+.post-1-lorem {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-1-lorem p {
+  margin: 0;
+}
+
+#tags {
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+#tags span {
+  background-color: gray;
+  color: white;
+  margin-top: 10px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#travel {
+  background-color: black;
+  padding: 8px;
+  color: white;
+}
