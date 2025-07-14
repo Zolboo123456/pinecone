@@ -1,0 +1,47 @@
+.design {
+  background-color: whitesmoke;
+}
+
+.design-wrapper {
+  width: 1280px;
+  padding: 64px 0px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.design-text {
+  width: 716px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-family: "Raleway", sans-serif;
+}
+
+.design-text h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.design-text p {
+  line-height: 1.8;
+  box-sizing: inherit;
+}
+
+.design-text button {
+  border: none;
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  height: 43px;
+  width: 250px;
+}
+
+.design-text button:hover {
+  color: black;
+  background-color: gray;
+}
+
+.design-image img {
+  border-radius: 8px;
+}

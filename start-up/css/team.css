@@ -1,0 +1,70 @@
+.team {
+  padding: 64px 0px;
+  margin: 0 auto;
+  width: 1280px;
+}
+
+.team-top {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.team-top h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.team-top p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.team-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-bottom-people {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.team-bottom-people h3 {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.team-bottom-people-p1 {
+  color: gray;
+}
+
+.team-bottom-people-p2 {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.team-bottom-people button {
+  border: none;
+  background-color: whitesmoke;
+  width: 269px;
+  height: 43px;
+  text-align: center;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+.team-bottom-people button:hover {
+  background-color: lightgray;
+}
+
+.team-bottom-people-info {
+  padding: 16px;
+}

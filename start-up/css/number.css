@@ -1,0 +1,27 @@
+.number {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background-color: #616161 !important;
+  color: white;
+}
+
+.number-wrapper {
+  margin: 0 auto;
+  width: 1280px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.number-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.number-info span {
+  font-size: 36px;
+}
