@@ -1,0 +1,58 @@
+.work {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0px 16px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0px 16px;
+  margin-top: 16px;
+}
+
+.work-info {
+  padding: 0.01em 16px;
+}
+
+.title {
+  color: #757575;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+  margin: 10px 0;
+}
+
+.work-title {
+  font-weight: bolder;
+  font-weight: 400;
+  font-family: "Roboto" sans-serif;
+  color: #757575;
+}
+
+.work-timeline {
+  color: #009688;
+}
+
+#span {
+  color: #fff;
+  background-color: #009688;
+  border-radius: 4px;
+  text-align: center;
+  padding: 4px 6px;
+  font-weight: 400;
+}
+
+.container {
+  margin: 0;
+  padding-bottom: 16px;
+}
+
+.work-description {
+  font-size: 13.5px;
+  line-height: 1.5;
+  letter-spacing: 0.000000001px;
+}
