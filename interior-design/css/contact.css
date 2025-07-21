@@ -6,7 +6,6 @@
   padding-bottom: 64px;
   transition: padding-left 0.3s ease;
   margin-right: 64px;
-  width: 100%;
 }
 
 .contact-title {
@@ -17,7 +16,6 @@
 
 .contact-wrapper {
   gap: 30px;
-  width: 100%;
 }
 
 .contact-name {
@@ -25,7 +23,6 @@
   flex-direction: column;
   border-radius: none;
   padding: 10px 0;
-  width: 100%;
 }
 
 .contact-name input {
@@ -37,7 +34,6 @@
   display: flex;
   flex-direction: column;
   padding: 10px 0;
-  width: 100%;
 }
 
 .contact-email input {
@@ -49,7 +45,6 @@
   display: flex;
   flex-direction: column;
   padding: 10px 0;
-  width: 100%;
 }
 
 .contact-message input {
@@ -78,7 +73,7 @@
     margin: 0;
     padding: 0;
     padding-left: 10px;
-    width: 98%;
+    padding-right: 10px;
     display: flex;
     justify-content: center;
   }
@@ -90,17 +85,24 @@
 
 @media (max-widht: 600px) {
   .contact {
-    width: 100%;
+    width: 600px;
     padding: 0;
-    padding-left: 10px;
     margin: 0;
   }
 
   .contact-wrapper {
-    width: 50%;
+    width: 100%;
   }
 
   .contact-name {
-    width: 98%;
+    width: 100%;
+  }
+
+  .contact-email {
+    width: 100%;
+  }
+
+  .contact-message {
+    width: 100%;
   }
 }
