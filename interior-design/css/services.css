@@ -1,0 +1,26 @@
+.services-title {
+  font-size: 48px;
+  color: #f44336;
+  margin: 10px 0;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  padding-left: 360px;
+  padding-top: 50px;
+  padding-bottom: 64px;
+  transition: padding-left 0.3s ease;
+}
+
+.services p {
+  font-size: 16px;
+}
+
+@media (max-width: 992px) {
+  .services {
+    padding-top: 50px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

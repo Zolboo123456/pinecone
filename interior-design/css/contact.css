@@ -1,0 +1,100 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  padding-left: 360px;
+  padding-top: 50px;
+  padding-bottom: 64px;
+  transition: padding-left 0.3s ease;
+  margin-right: 64px;
+}
+
+.contact-title {
+  font-size: 48px;
+  color: #f44336;
+  margin: 10px 0;
+}
+
+.contact-wrapper {
+  gap: 30px;
+  width: 100%;
+}
+
+.contact-name {
+  display: flex;
+  flex-direction: column;
+  border-radius: none;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.contact-name input {
+  border: 1px solid #ccc !important;
+  height: 42px;
+}
+
+.contact-email {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.contact-email input {
+  border: 1px solid #ccc !important;
+  height: 42px;
+}
+
+.contact-message {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.contact-message input {
+  border: 1px solid #ccc !important;
+  height: 42px;
+}
+
+.contact-footer button {
+  margin-top: 10px;
+  border: none;
+  width: 100%;
+  height: 48px;
+  color: white;
+  background-color: #f44336;
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.contact-footer button:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+@media (max-width: 992px) {
+  .contact {
+    margin: 0;
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-name {
+    padding-right: 10px;
+  }
+}
+
+@media (max-widht: 600px) {
+  .contact {
+    width: 100%;
+    padding: 0 10px;
+    padding-right: 10px;
+    margin: 0;
+  }
+
+  .contact-name {
+    width: 98%;
+  }
+}

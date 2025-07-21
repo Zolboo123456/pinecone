@@ -1,0 +1,78 @@
+h1,
+h2,
+h3,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  z-index: 3;
+  height: 100%;
+  background-color: #f44336;
+  padding: 4px 0;
+}
+
+.side-bar-title {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 64px 0;
+  padding: 10px 16px;
+}
+
+.side-bar-services {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 0 20px;
+  text-decoration: none;
+}
+
+.side-bar-services a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 8px 16px;
+  height: 25px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.side-bar-services a:hover {
+  background-color: white;
+  color: black;
+}
+
+.top-bar {
+  position: fixed;
+  background-color: #f44336;
+  height: 70px;
+  width: 100%;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: white;
+  padding-left: 32px;
+  gap: 54px;
+  display: none;
+  justify-content: left;
+  align-items: center;
+  z-index: 3;
+}
+
+@media (max-width: 992px) {
+  .side-bar {
+    display: none;
+  }
+
+  .top-bar {
+    display: flex;
+  }
+}

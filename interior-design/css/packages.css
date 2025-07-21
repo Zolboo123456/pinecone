@@ -1,0 +1,192 @@
+.packages {
+  display: flex;
+  flex-direction: column;
+  padding-left: 360px;
+  padding-top: 50px;
+  padding-bottom: 64px;
+  transition: padding-left 0.3s ease;
+  margin-right: 64px;
+}
+
+.packages-title {
+  font-size: 48px;
+  color: #f44336;
+  margin: 10px 0;
+}
+
+.packages-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 20px;
+}
+
+.packages-bottom-basic {
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.packages-bottom-basic-header {
+  background-color: #616161;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.packages-bottom-basic-body {
+  background-color: #f1f1f1;
+}
+
+.packages-bottom-basic-body div {
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+}
+
+#packages-bottom-basic-body-price {
+  height: 122px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#packages-bottom-basic-body-price-number {
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+#packages-bottom-basic-body-price-text {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.packages-bottom-basic-footer {
+  height: 96px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.packages-bottom-basic-footer button {
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  padding: 12px 24px !important;
+}
+
+.packages-bottom-basic-footer button:hover {
+  background-color: black;
+  color: white;
+}
+
+.packages-bottom-pro {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.packages-bottom-pro-header {
+  background-color: #f44336;
+  color: white;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.packages-bottom-pro-body {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.packages-bottom-pro-body div {
+  border-bottom: 1px solid #ddd;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+#packages-bottom-pro-body-price {
+  height: 122px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#packages-bottom-pro-body-price-number {
+  font-size: 30px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+#packages-bottom-pro-body-price-text {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.packages-bottom-pro-footer {
+  height: 96px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.packages-bottom-pro-footer button {
+  background-color: #f44336;
+  border: none;
+  font-size: 20px;
+  padding: 12px 24px !important;
+}
+
+.packages-bottom-pro-footer button:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .packages {
+    margin: 0;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .packages {
+    margin-bottom: 50px;
+  }
+
+  .packages-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .packages-bottom-basic {
+    width: 100%;
+  }
+
+  .packages-bottom-pro {
+    width: 100%;
+  }
+}
