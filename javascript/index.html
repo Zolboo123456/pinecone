@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <script>
+      /*
+          What is Variable and how to declare?
+          - let-н өөрчлөгдөнө local,
+          - const-н өөрчлөгдөхгүй local,
+          - var-н өөрчлөгдөнө global,
+
+          String notations: "", '', `` дотор бичсэн юмнууд нь text,
+          Number notations: Number("___" эсвэл '___' эсвэл `___` дотор бичсэн text-үүдийг тоо болгоно)
+
+          The use of "=" sign:
+          - Тэнцүү юу үгүй юу гэдгийг нь шалгах гэж байгаа бол 3н ширхэг "=" ийн тэмдэг ашиглах нь тохиромжтой
+              = assigning a value (utga uguh)
+              == comparison but not strict (string vs number aldaa zaahgui)
+              === strict comparison (string vs number aldaa zaana)
+
+          String Helper Functions:
+          - .length гэдэг зүйлийг ашиглан хэдэн тэмдэгт ашигласныг нь тоолуулж болно
+          - \n энэ нь шинэ мөр авна
+
+          What is Index?
+          - index нь үргэлж 0 ээс эхэлнэ
+          хамгийн сүүлд бичсэн тэмдэгтийг олохын тулд console.log(хамгийн сүүлд байгаа тэмдэгтийн хармаар байгаа юмныхаа нэрийн бичнэ[ийм дөрвөлжин хаалт ашиглан нөгөө юмныхаа нэрийг бичээд зай авахгүйгээр ".length" гэж бичээд  тэгээд 1-ийн тоогоо бичнээ])
+
+          If, else if bolon elses ashiglah nuhtsul:
+          - Нөхцөл шалгах үед ашиглана
+          if (ene dotoroo nuhtsuluu bichne){
+            console.log(ene dotor hervee unen bol garj ireh ugee bichne);
+          } else if (ene dotor daraagiin nuhtsuluu bichne){
+           console .log(ene dotor bas hervee unen bol garj ireh ugee bichne)
+          } else {
+            console.log(ene dotor deer baigaa 2 ym hoyulaa hudlaa bol garj ireh ugee bichne.)
+          }
+      */
+
+      //   let name = "Zolboo";
+      //   let age = 18;
+
+      //   console.log(
+      //     "Hi, my name is " + name + " and I am " + age + " years old."
+      //   );
+
+      //   console.log(`Hi, my name is ${name} and I am ${age} years old.`);
+
+      //   if (age >= 18) {
+      //     console.log(`${name} is an adult`);
+      //   } else {
+      //     console.log(`${name} is not an adult.`);
+      //   }
+
+      const x = 14;
+
+      if (x % 3 == 0 && x % 5 == 0) {
+        console.log("fizzbuzz");
+      } else if (x % 5 == 0) {
+        console.log("buzz");
+      } else if (x % 3 == 0) {
+        console.log("fizz");
+      } else {
+        console.log("not divisable for 3 and 5");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
