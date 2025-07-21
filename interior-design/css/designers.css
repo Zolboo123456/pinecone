@@ -21,6 +21,7 @@
 .designers-people {
   display: flex;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .designers-people-person1 {
