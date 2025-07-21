@@ -6,12 +6,13 @@
   padding-bottom: 64px;
   transition: padding-left 0.3s ease;
   margin-right: 64px;
+  width: 100%;
 }
 
 .contact-title {
   font-size: 48px;
   color: #f44336;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .contact-wrapper {
@@ -75,23 +76,28 @@
 @media (max-width: 992px) {
   .contact {
     margin: 0;
-    padding: 0 10px;
-    width: 100%;
+    padding: 0;
+    padding-left: 10px;
+    width: 98%;
     display: flex;
     justify-content: center;
   }
 
-  .contact-name {
-    padding-right: 10px;
+  .contact-wrapper {
+    width: 100%;
   }
 }
 
 @media (max-widht: 600px) {
   .contact {
     width: 100%;
-    padding: 0 10px;
-    padding-right: 10px;
+    padding: 0;
+    padding-left: 10px;
     margin: 0;
+  }
+
+  .contact-wrapper {
+    width: 50%;
   }
 
   .contact-name {
