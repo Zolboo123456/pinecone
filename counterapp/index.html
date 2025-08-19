@@ -1,0 +1,145 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radial Progress</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #fff;
+        font-family: sans-serif;
+      }
+
+      .progress-container {
+        position: relative;
+        width: 250px;
+        height: 250px;
+      }
+
+      svg {
+        transform: rotate(-90deg);
+      }
+
+      .background {
+        stroke: #eee;
+      }
+
+      .progress {
+        stroke: #8a2be2; /* Purple */
+        transition: stroke-dashoffset 0.4s ease;
+      }
+
+      .center-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      .steps {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+
+      .goal {
+        color: gray;
+      }
+
+      .pause-btn {
+        margin-top: 10px;
+        border: 2px solid #8a2be2;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background: none;
+        color: #8a2be2;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      .buttons {
+        font-size: 16px;
+        height: 25px;
+        width: 40px;
+        border-radius: 20%;
+        background-color: white;
+        border: 1px black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="progress-container"> -->
+      <svg width="250" height="250">
+        <circle
+          class="background"
+          cx="125"
+          cy="125"
+          r="110"
+          stroke-width="15"
+          fill="none"
+        />
+        <circle
+          class="progress"
+          cx="125"
+          cy="125"
+          r="110"
+          stroke-width="15"
+          fill="none"
+          stroke-linecap="round"
+        />
+      </svg>
+      <div class="center-content">
+        <div class="steps" id="step-count">0</div>
+        <div class="goal">/100</div>
+        <div id="buttons">
+          <button class="buttons" id="hasahButton">-1</button>
+          <button class="buttons" id="nemehButton">+1</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const stepCountEl = document.getElementById("step-count");
+      const progressCircle = document.querySelector(".progress");
+      const nemeh = document.getElementById("nemehButton");
+      const hasah = document.getElementById("hasahButton");
+
+      const goal = 100;
+      let count = 0;
+      let steps = count; // starting value
+
+      const radius = 110;
+      const circumference = 2 * Math.PI * radius;
+
+      progressCircle.style.strokeDasharray = circumference;
+      progressCircle.style.strokeDashoffset = circumference;
+
+      function updateProgress() {
+        stepCountEl.textContent = steps.toLocaleString();
+        const percent = steps / goal;
+        const offset = circumference - percent * circumference;
+        progressCircle.style.strokeDashoffset = offset;
+      }
+
+      nemeh.addEventListener("click", function () {
+        count++;
+        updateDisplay();
+      });
+
+      hasah.addEventListener("click", function () {
+        count--;
+        updateDisplay();
+      });
+      updateProgress();
+
+      function updateDisplay() {
+        stepCountEl.textContent = count;
+      }
+    </script>
+  </body>
+</html> -->

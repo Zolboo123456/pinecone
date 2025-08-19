@@ -1,0 +1,255 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  transition: background-color 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  padding-top: 10px;
+  font-size: 50px;
+  transition: 0.3s ease;
+}
+
+#topSide {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+#hamburgerButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: 20px;
+  padding: 10px 20px;
+  transition: 0.3s ease;
+}
+
+#settings {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #818181;
+  letter-spacing: 8px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 70px;
+}
+
+.closebtn {
+  padding: 32px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.items a {
+  padding: 32px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.items a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.mainSection {
+  margin-top: 30px;
+  min-height: 400px;
+  height: 20px;
+  min-width: 400px;
+  background-color: transparent;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+#searchInput {
+  width: 80%;
+  border: 1px lightgray solid;
+  border-radius: 10px;
+  height: 35px;
+  padding-left: 40px;
+  display: flex;
+  justify-self: center;
+  margin-top: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: transparent;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .items a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mainSection {
+    min-width: 300px;
+    transition: 0.3s ease;
+  }
+
+  #hamburgerButton {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #title {
+    font-size: 40px;
+    transition: 0.3s ease;
+  }
+
+  #hamburgerButton {
+    padding-left: 0px;
+    font-size: 35px;
+    transition: 0.3s ease;
+  }
+}
+
+#deleteAll {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-self: center;
+  align-self: end;
+}
+
+#addButton {
+  color: white;
+  font-size: 35px;
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: lightgray;
+  position: absolute;
+  right: 30px;
+  top: 300px;
+  display: flex;
+  justify-self: right;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.color-input::-webkit-color-swatch-wrapper {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.color-input::-webkit-color-swatch {
+  border: none;
+  border-radius: 10px;
+}
+
+.color-input {
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.itemnuud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-size: 20px;
+}
+
+.itemnuud:first-child {
+  margin-top: 50px;
+}
